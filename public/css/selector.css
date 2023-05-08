@@ -1,0 +1,226 @@
+/* Selectors lesson1
+ :root {
+  background: orange;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+.box {
+  background: green;
+}
+
+#user {
+  color: purple;
+} 
+
+h1,
+h2,
+button {
+  color: pink;
+}*/
+
+/*.card-dark {
+  background: rgb(241, 239, 239);
+}
+.item {
+  color: green;
+}
+
+/*
+Селектор першої дитини де .item це клас, а :first-child це псевдоклас
+.item:first-child {
+  color: blue;
+}
+Селектор останньої дитини де .item це клас, а :last-child це псевдоклас
+.item:last-child {
+  color: orange;
+}
+Селектор одиничної дитини де .once це клас, а :only-child це псевдоклас
+.once:only-child {
+  color: purple;
+}
+Селектор першого типу де p,b,em це тип, а :first-of-type це псевдоклас
+p:first-of-type {
+  color: brown;
+}
+Селектор останнього типу де p,b,em, "якесь значення class" це тип, а :last-of-type це псевдоклас
+b:last-of-type {
+  color: magenta;
+}
+Селектор одиничного типу де p,b,em, "якесь значення class" це тип, а :only-of-type це псевдоклас
+strong:only-of-type {
+  color: red;
+}
+Селектор порядкової дитини .item  де (n) має числове значення працює з усіма тегами, а :nth-child це псевдоклас
+nтакож можна писати even для визначення парних елементів,або odd для непарних. 
+Також є можливість формули, наприклад - 3n+1
+.item:nth-child(3) {
+  color: pink;
+}.name:nth-child(3n + 1) {
+  color: chocolate;
+}
+.this:nth-child(3n - 1) {
+  color: chocolate;
+}
+Селектор зворотної дитини .that  де (n) має числове значення, а :nth-last-child це псевдоклас
+ 
+.that:nth-last-child(3) {
+  color: darkblue;
+}
+Селектор порядкового типу  де (n) має числове значення працює лише з типом тегу, а :nth-of-type це псевдоклас
+
+i:nth-of-type(2) {
+  color: seagreen;
+}
+/*Селектор зворотного порядкового типу  де (n) має числове значення працює лише з типом тегу, а :nth-last-of-type це псевдоклас
+ 
+i:nth-last-of-type(2) {
+  color: rgb(115, 216, 20);
+}
+Селектор невідповідності де (s) має  значенняу, а :not це псевдоклас
+ 
+em:not(.those) {
+  color: rgb(71, 117, 28);
+}
+Селектор пустого  контенту має  значення у, а :empty це псевдоклас
+ 
+li:empty {
+  height: 5px;
+  background: blueviolet;
+}*/
+
+.input-dark {
+  background: gray;
+}
+/*селектор атрибута*/
+.input-dark[required] {
+  background: red;
+}
+/*селектор значення атрибута*/
+.input-dark[type='number'] {
+  background: yellow;
+}
+/*селектор наявності значення атрибута*/
+.small-img[alt~='small'] {
+  height: 500px;
+}
+/*селектор префіксу значення атрибута*/
+button[class|='btn'] {
+  background: skyblue;
+}
+/*селектор початку значення атрибута*/
+a[class^='btn'] {
+  background: brown;
+}
+/*селектор кореня значення атрибута*/
+div[class*='btn'] {
+  background: blue;
+}
+/*селектор кінцівки значення атрибута*/
+div[class$='big'] {
+  background: orange;
+}
+/*селектор псевдоелементів першої літери*/
+span::first-letter {
+  color: red;
+}
+/*селектор псевдоелементів першого рядка*/
+.big-text::first-line {
+  color: pink;
+}
+/*селектор псевдоелементів плейсхолдера*/
+.input-light::placeholder {
+  background: rgb(171, 154, 157);
+}
+/*селектор псевдоелементів попереду*/
+.small-text::before {
+  content: '$$$';
+  background: red;
+}
+/*селектор псевдоелементів позаду*/
+.some-text::after {
+  content: '$$$';
+  color: blue;
+}
+
+#test:target {
+  color: red;
+}
+.link:link {
+  color: yellow;
+}
+.link:hover {
+  color: green;
+}
+.card:active {
+  background: purple;
+}
+
+input {
+  background: blue;
+}
+input:focus {
+  background: red;
+}
+.card:focus-within {
+  background: darkred;
+}
+.card:lang(en) {
+  background: grey;
+}
+.card:lang(fr) {
+  background: orange;
+}
+.card:lang(fr) > span::after {
+  content: '(fr)';
+}
+button:enabled {
+  background-color: green;
+}
+button {
+  background-color: blue;
+}
+.inp:read-write {
+  background-color: blueviolet;
+}
+input[type='checkbox'] ~ span {
+  background: yellow;
+}
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+.valid:valid {
+  background: lightblue;
+}
+.valid:invalid {
+  background: orange;
+}
+.valid:optional {
+  background: rgb(145, 203, 145);
+}
+.number:focus {
+  background: grey;
+}
+.number:out-of-range {
+  background: red;
+}
+.number:in-range {
+  background: yellow;
+}
+input:placeholder-shown ~ span {
+  background: pink;
+}
