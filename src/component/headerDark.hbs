@@ -1,0 +1,14 @@
+{{#with header}}
+<div class="top_header">
+    <div class="logo">{{> logoT7}}</div>
+    <nav>{{> navT7 }}</nav>
+</div>
+<div class="bottom_header">
+    <div class="ad">{{#with ad}}
+        <span class="ad_logo">AD</span>
+        {{text}} {{ url}}
+        {{/with}}
+    </div>
+    <div class="user_online">User online: {{userOnline}}</div>
+</div>
+{{/with}}
