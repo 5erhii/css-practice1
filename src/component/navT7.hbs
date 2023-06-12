@@ -1,0 +1,11 @@
+<div class="nav">
+    {{#if links}}
+    {{#each links}}
+    <a href="{{url}}" class="header_link">{{text}}</a>
+    {{/each}}
+    {{else}}
+    {{#each pages}}
+    <a href="{{path}}" class="footer_link">{{name}}</a>
+    {{/each}}
+    {{/if}}
+</div>

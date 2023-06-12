@@ -1,0 +1,10 @@
+{{#each articles}}
+<div class="article_card ">
+    <div class="card_img_frame">
+        <img src="{{photo}}" alt="{{name}}" class="card_img">
+        {{#if isNew}} <span class="card_bage">NEW</span>{{/if}}
+    </div>
+    <h3 class="card_img_name">{{name}}</h3>
+    <p class="card_description">{{description}}</p>
+</div>
+{{/each}}
